@@ -2,25 +2,25 @@
   <div class="app">
     <div class="work-space">
       <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
-        <el-tab-pane label="定高虚拟列表" name="first" lazy>
+        <!-- <el-tab-pane label="定高虚拟列表" name="first" lazy>
           <div class="list-container">
             <list-container />
           </div>
-        </el-tab-pane>
+        </el-tab-pane> -->
         <el-tab-pane label="不定高虚拟列表" name="second" lazy>
           <div class="list-container">
             <estimated-list-container /></div
         ></el-tab-pane>
-        <el-tab-pane label="瀑布流列表" name="third" lazy>
+        <!-- <el-tab-pane label="瀑布流列表" name="third" lazy>
           <div class="waterfall-container">
             <waterfall-container />
           </div>
-        </el-tab-pane>
-        <el-tab-pane label="瀑布流虚拟列表" name="fourth" lazy>
+        </el-tab-pane> -->
+        <!-- <el-tab-pane label="瀑布流虚拟列表" name="fourth" lazy>
           <div class="waterfall-container">
             <virtual-waterfall-container />
           </div>
-        </el-tab-pane>
+        </el-tab-pane> -->
       </el-tabs>
     </div>
   </div>
@@ -34,7 +34,7 @@ import waterfallContainer from "./views/waterfall-container.vue";
 import virtualWaterfallContainer from "./views/virtual-waterfall-container.vue";
 import type { TabsPaneContext } from "element-plus";
 
-const activeName = ref("first");
+const activeName = ref("second");
 
 const handleClick = (tab: TabsPaneContext, event: Event) => {
   console.log(tab, event);
